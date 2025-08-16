@@ -33,7 +33,7 @@ router.get("/auth/validate", (req, res) => {
 
   try {
     const decoded = jwt.verify(token, JWT_SECRET);
-    const user = users.find(u => u.id === decoded.id);
+    const user = User.find(u => u.id === decoded.id);
     if (!user) return res.status(404).json({ message: "User not found" });
     res.json({ id: user.id, fullName: user.fullName, email: user.email });
   } catch (err) {
