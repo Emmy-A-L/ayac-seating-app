@@ -1,15 +1,16 @@
 import { useState } from "react";
-
-// import { useNavigate } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [ error, setError ] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,21 +18,27 @@ const LoginPage = () => {
     setError(null);
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}auth/login`, {
-        email,
-        password
-      });
-      console.log("result: ", res.data)
+      const res = await axios.post(
+        `${import.meta.env.VITE_API_URL}/auth/login`,
+        { email, password },
+        { withCredentials: true } // ✅ include cookies
+      );
+
+      console.log("result: ", res.data);
 
       if (res.status === 200) {
         alert("Login successful!");
-        window.location.href = "/"; // re-direct to the home page
+        navigate("/"); // ✅ react-router redirect
       } else {
-        alert("Login failed");
+        setError("Login failed. Please check your credentials.");
       }
-    } catch (err) {
+    } catch (err: unknown) {
       console.error("Login error:", err);
-      setError("Login failed. Please check your credentials.");
+      if (axios.isAxiosError(err)) {
+        setError(err.response?.data?.message || "Login failed.");
+      } else {
+        setError("Login failed.");
+      }
     } finally {
       setIsLoading(false);
     }
@@ -40,21 +47,17 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 px-4">
       <div className="max-w-md w-full space-y-8">
-        {/* Header */}
         <div className="text-center">
-          <h2 className="mt-6 text-4xl font-bold text-white">Hi there Visionary</h2>
+          <h2 className="mt-6 text-4xl font-bold text-white">
+            Hi there Visionary
+          </h2>
         </div>
 
-        {error && (
-          <div className="my-4 text-red-500 text-center">
-            {error}
-          </div>
-        )}
+        {error && <div className="my-4 text-red-500 text-center">{error}</div>}
 
-        {/* Login Form */}
         <form onSubmit={handleLogin} className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm space-y-4">
-            {/* Email Input */}
+            {/* Email */}
             <div className="relative">
               <IoMailOutline className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl" />
               <input
@@ -62,12 +65,12 @@ const LoginPage = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none relative block w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
                 placeholder="Email address"
               />
             </div>
 
-            {/* Password Input */}
+            {/* Password */}
             <div className="relative">
               <RiLockPasswordLine className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl" />
               <input
@@ -75,7 +78,7 @@ const LoginPage = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="appearance-none relative block w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
                 placeholder="Password"
               />
             </div>
@@ -90,7 +93,6 @@ const LoginPage = () => {
             {isLoading ? "Signing in..." : "Sign in"}
           </button>
         </form>
-
       </div>
     </div>
   );
