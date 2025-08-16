@@ -1,44 +1,33 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import api from "../services/axios";
+import type { User } from "../utils/types";
 
-// const getUser = async () => {
-//     try {
-//         const response = await fetch("/api/auth/validate", {
-//             method: "GET",
-//             credentials: "include",
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//         });
-//         if (!response.ok) {
-//             return null;
-//         }
-//         const user = await response.json();
-//         return user;
-//     } catch (error) {
-//         console.error("Error fetching user:", error);
-//     }
-// }
 
-// export const useAuth = () => {
-//   const [user, setUser] = useState<User | null>(null);
-//   const [loading, setLoading] = useState(true);
 
-//   useEffect(() => {
-//     const authenticate = async () => {
-//       setLoading(true);
-//       const user = await getUser();
-//       setUser(user);
-//       setLoading(false);
-//     };
+export const useAuth = () => {
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
 
-//     authenticate();
-//   }, []);
+  const fetchUser = async () => {
+    try {
+      const res = await api.get<User>("auth/validate");
+      setUser(res.data);
+    } catch (err) {
+      console.error("Auth check failed:", err);
+      setUser(null);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-//   const isAuthenticated = !!user;
+  useEffect(() => {
+    fetchUser();
+  }, []);
 
-//   return {
-//     user,
-//     loading,
-//     isAuthenticated,
-//   };
-// };
+  return {
+    user,
+    loading,
+    isAuthenticated: !!user,
+    refresh: fetchUser, // allow re-check manually
+  };
+};

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
 import axios from "axios";
@@ -8,27 +8,30 @@ import axios from "axios";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
+  const [ error, setError ] = useState<string | null>(null);
 
-  const handleEmailLogin = async (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError("");
     setIsLoading(true);
+    setError(null);
 
     try {
-      const response = await axios.post("https://your-backend-url.com/api/login", {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}auth/login`, {
         email,
-        password,
+        password
       });
+      console.log("result: ", res.data)
 
-      // Optionally handle token/session here
-      navigate("/");
-    } catch (err: any) {
-      setError(
-        err.response?.data?.message || err.message || "Failed to sign in"
-      );
+      if (res.status === 200) {
+        alert("Login successful!");
+        window.location.href = "/"; // re-direct to the home page
+      } else {
+        alert("Login failed");
+      }
+    } catch (err) {
+      console.error("Login error:", err);
+      setError("Login failed. Please check your credentials.");
     } finally {
       setIsLoading(false);
     }
@@ -42,15 +45,14 @@ const LoginPage = () => {
           <h2 className="mt-6 text-4xl font-bold text-white">Hi there Visionary</h2>
         </div>
 
-        {/* Error Message */}
         {error && (
-          <div className="bg-red-500 text-white px-4 py-3 rounded-lg text-sm">
+          <div className="my-4 text-red-500 text-center">
             {error}
           </div>
         )}
 
         {/* Login Form */}
-        <form onSubmit={handleEmailLogin} className="mt-8 space-y-6">
+        <form onSubmit={handleLogin} className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm space-y-4">
             {/* Email Input */}
             <div className="relative">

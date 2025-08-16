@@ -6,42 +6,44 @@ const router = express.Router();
 
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
-  if (!email || !password) {
-    return res
-      .status(400)
-      .json({ message: "Email and Password are required!" });
+  const user = await User.findOne({ email: email });
+
+  if (!user || !bcrypt.compareSync(password, user.password)) {
+    return res.status(401).json({ message: "Invalid credentials" });
   }
+
+  // Sign JWT
+  const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, { expiresIn: "1h" });
+
+  // Send as cookie (safer than localStorage)
+  res.cookie("token", token, {
+    httpOnly: true, // not accessible from JS
+    secure: false,  // set true if using https
+    sameSite: "strict"
+  });
+
+  res.json({ message: "Login successful" });
+});
+
+// ✅ Protected route: get current user
+app.get("/api/auth/validate", (req, res) => {
+  const token = req.cookies.token;
+  if (!token) return res.status(401).json({ message: "Not authenticated" });
+
   try {
-    const existingUser = await User.findOne({ email: email });
-
-    if (!existingUser) {
-      return res.status(404).json({ message: "User not found!" });
-    }
-
-    const isPasswordValid = await bcrypt.compare(
-      password,
-      existingUser.password
-    );
-    if (!isPasswordValid) {
-      return res.status(401).json({ message: "Invalid password!" });
-    }
-    
-    res.status(200).json({
-      message: "Login successful",
-      data: {
-        userId: existingUser._id,
-        fullName: existingUser.fullName,
-        email: existingUser.email,
-        phone: existingUser.phone,
-      },
-      
-    });
-  } catch (error) {
-    console.error("Error durin Login: ", error);
-    res
-      .status(500)
-      .json({ message: "Inrernal server error", error: error.message });
+    const decoded = jwt.verify(token, JWT_SECRET);
+    const user = users.find(u => u.id === decoded.id);
+    if (!user) return res.status(404).json({ message: "User not found" });
+    res.json({ id: user.id, fullName: user.fullName, email: user.email });
+  } catch (err) {
+    res.status(401).json({ message: "Invalid token" });
   }
+});
+
+// ✅ Logout route: clear cookie
+app.post("/api/auth/logout", (req, res) => {
+  res.clearCookie("token");
+  res.json({ message: "Logged out" });
 });
 
 export default router;
