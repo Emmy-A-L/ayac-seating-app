@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install",
-    "dev": "node index.js",
+    "dev": "npm install",
+    "start": "node index.js",
     "lint": "eslint ."
   },
   "keywords": [],
