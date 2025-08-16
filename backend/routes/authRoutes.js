@@ -26,7 +26,7 @@ router.post("/login", async (req, res) => {
 });
 
 // ✅ Protected route: get current user
-router.get("/api/auth/validate", (req, res) => {
+router.get("/auth/validate", (req, res) => {
   const token = req.cookies.token;
   if (!token) return res.status(401).json({ message: "Not authenticated" });
 
@@ -41,7 +41,7 @@ router.get("/api/auth/validate", (req, res) => {
 });
 
 // ✅ Logout route: clear cookie
-router.post("/api/auth/logout", (req, res) => {
+router.post("/auth/logout", (req, res) => {
   res.clearCookie("token");
   res.json({ message: "Logged out" });
 });
