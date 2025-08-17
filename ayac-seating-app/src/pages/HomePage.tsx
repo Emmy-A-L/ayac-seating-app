@@ -18,7 +18,7 @@ const HomePage = () => {
       {help && (
         <div className="absolute top-4 left-2 w-[300px] bg-gray-800/40 border border-gray-400 backdrop-filter backdrop-blur-sm text-white p-4 rounded-lg shadow-lg z-1000">
           <h2 className="text-sm font-semibold mb-2">Help</h2>
-          <p className="mb-2 text-xs">To verify if a participant is registered, enter the participant's phone number.</p>
+          <p className="mb-2 text-xs">To verify if a participant is registered, enter the participant's fullname or firstname.</p>
         </div>
       )}
 
@@ -31,7 +31,7 @@ const HomePage = () => {
           </button>
         </span>
         <h1 className="text-4xl font-bold mb-4">AYAC 2025</h1>
-        <p className="text-lg">Verify registered youths by entering their phone numbers.</p>
+        <p className="text-lg">Verify registered youths by entering their fullname or firstname.</p>
       </div>
 
       <VerificationForm />
