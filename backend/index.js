@@ -17,6 +17,7 @@ const corsOptions = {
     origin: process.env.FRONTEND_URL || "http://localhost:5173", // replace with your frontend URL
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization']
 }
 
 

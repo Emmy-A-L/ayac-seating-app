@@ -53,6 +53,8 @@ router.post("/login", async (req, res) => {
 router.get("/validate", async (req, res) => {
   try {
     const token = req.cookies.token;
+    console.log("Token: ", token)
+    console.log("Request info: ", req.cookies)
     if (!token) {
       return res.status(401).json({ message: "Not authenticated" });
     }
