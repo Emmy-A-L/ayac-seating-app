@@ -3,7 +3,7 @@ import { IoMailOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import api from "../services/axios";
-import { useAuth } from "../hooks/useAuth";
+import { useAuth } from "../hooks/useAuthContext";
 import axios from "axios";
 
 const LoginPage = () => {
