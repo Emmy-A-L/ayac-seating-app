@@ -21,32 +21,40 @@ const LoginPage = () => {
     setError(null);
 
     try {
+      console.log("Attempting login...");
+      
       const res = await api.post(
         "auth/login",
         { email, password },
         { withCredentials: true }
       );
       
-      // ✅ Axios automatically throws for 4xx/5xx, so if we reach here, it's successful
-      console.log("Login successful:", res.data.message);
-      localStorage.setItem("token", res.data.token);
-      api.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
-
-      // ✅ Fetch the user profile AFTER login
-      await fetchUser();
-      navigate("/");
+      // ✅ Wait for fetchUser to complete
+      const userData = await fetchUser();
+      
+      if (userData) {
+        alert(`Welcome, ${userData.fullName}`);
+        navigate("/", { replace: true });
+      } else {
+        console.error("Failed to fetch user data after login");
+        setError("Login successful but failed to load user data. Please refresh.");
+      }
       
     } catch (err: unknown) {
-      if (axios.isAxiosError(err)) {
-        // More specific error handling
-        const errorMessage = err.response?.data?.message;
-        if (err.response?.status === 401) {
+      if (axios.isAxiosError(err) && err.response) {
+        const errorMessage = err.response.data?.message;
+        if (err.response.status === 401) {
           setError("Invalid email or password. Please try again.");
-        }
-        else {
+        } else if (err.response.status >= 500) {
+          setError("Server error. Please try again later.");
+        } else {
           setError(errorMessage || "Login failed. Please try again.");
         }
-        console.error("Login error:", err.response?.data);
+        console.error("Login error:", err.response.data);
+      } else if (axios.isAxiosError(err)) {
+        // Network error or no response
+        setError("Network error. Please check your connection.");
+        console.error("Network error:", err.message);
       } else {
         console.error("Unexpected error:", err);
         setError("An unexpected error occurred. Please try again.");
