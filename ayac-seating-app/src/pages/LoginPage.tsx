@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { IoMailOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import api from "../services/axios";
+import { useAuth } from "../hooks/useAuth";
+import axios from "axios";
 
 const LoginPage = () => {
+    const { fetchUser } = useAuth(); // 👈 get fetchUser here
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -18,25 +21,25 @@ const LoginPage = () => {
     setError(null);
 
     try {
-      const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}auth/login`,
+      const res = await api.post(
+        "auth/login",
         { email, password },
-        { withCredentials: true } // ✅ include cookies
+        { withCredentials: true }
       );
-
-      console.log("result: ", res.data);
-
+      await fetchUser();
       if (res.status === 200) {
-        alert("Login successful!");
-        navigate("/"); // ✅ react-router redirect
+        // ✅ Now fetch the user profile AFTER login
+        navigate("/");
       } else {
         setError("Login failed. Please check your credentials.");
       }
     } catch (err: unknown) {
-      console.error("Login error:", err);
       if (axios.isAxiosError(err)) {
+        // Handle Axios error
+        console.error("Login error:", err.response?.data);
         setError(err.response?.data?.message || "Login failed.");
       } else {
+        console.error("Login error:", err);
         setError("Login failed.");
       }
     } finally {
