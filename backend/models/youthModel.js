@@ -5,10 +5,6 @@ const youthDataSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    phone: {
-        type: String,
-        required: false,
-    },
     register: {
         type: Boolean,
         required: true,
