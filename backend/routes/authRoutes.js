@@ -55,7 +55,7 @@ router.post("/login", async (req, res) => {
 // ✅ Protected route: get current user
 router.get("/validate", async (req, res) => {
   try {
-    const token = req.headers.authorization?.split(" ")[1] || req.cookies.token;
+    const token = req.cookies.token;
     console.log("Token: ", token);
     console.log("Request info: ", req.cookies);
     if (!token) {
@@ -63,6 +63,7 @@ router.get("/validate", async (req, res) => {
     }
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    console.log("Decoded token: ", decoded);
 
     // Use proper async database query
     const user = await User.findById(decoded.id).select("-password");
