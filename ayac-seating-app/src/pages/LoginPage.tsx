@@ -29,11 +29,15 @@ const LoginPage = () => {
         { withCredentials: true }
       );
       
+      console.log("Login response:", res.data);
+      
       // ✅ Wait for fetchUser to complete
       const userData = await fetchUser();
+      console.log("User data fetched:", userData);
       
       if (userData) {
         alert(`Welcome, ${userData.fullName}`);
+        console.log("Redirecting to homepage...");
         navigate("/", { replace: true });
       } else {
         console.error("Failed to fetch user data after login");
