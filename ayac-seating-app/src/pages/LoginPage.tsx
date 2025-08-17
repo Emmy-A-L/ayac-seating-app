@@ -7,7 +7,7 @@ import { useAuth } from "../hooks/useAuth";
 import axios from "axios";
 
 const LoginPage = () => {
-    const { fetchUser } = useAuth(); // 👈 get fetchUser here
+  const { fetchUser } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -26,21 +26,28 @@ const LoginPage = () => {
         { email, password },
         { withCredentials: true }
       );
+      
+      // ✅ Axios automatically throws for 4xx/5xx, so if we reach here, it's successful
+      console.log("Login successful:", res.data.message);
+      
+      // ✅ Fetch the user profile AFTER login
       await fetchUser();
-      if (res.status === 200) {
-        // ✅ Now fetch the user profile AFTER login
-        navigate("/");
-      } else {
-        setError("Login failed. Please check your credentials.");
-      }
+      navigate("/");
+      
     } catch (err: unknown) {
       if (axios.isAxiosError(err)) {
-        // Handle Axios error
+        // More specific error handling
+        const errorMessage = err.response?.data?.message;
+        if (err.response?.status === 401) {
+          setError("Invalid email or password. Please try again.");
+        }
+        else {
+          setError(errorMessage || "Login failed. Please try again.");
+        }
         console.error("Login error:", err.response?.data);
-        setError(err.response?.data?.message || "Login failed.");
       } else {
-        console.error("Login error:", err);
-        setError("Login failed.");
+        console.error("Unexpected error:", err);
+        setError("An unexpected error occurred. Please try again.");
       }
     } finally {
       setIsLoading(false);
@@ -56,7 +63,11 @@ const LoginPage = () => {
           </h2>
         </div>
 
-        {error && <div className="my-4 text-red-500 text-center">{error}</div>}
+        {error && (
+          <div className="my-4 p-3 text-red-400 bg-red-900/20 border border-red-800 rounded-lg text-center text-sm">
+            {error}
+          </div>
+        )}
 
         <form onSubmit={handleLogin} className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm space-y-4">
@@ -68,8 +79,9 @@ const LoginPage = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none relative block w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="appearance-none relative block w-full pl-12 pr-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 placeholder="Email address"
+                disabled={isLoading}
               />
             </div>
 
@@ -81,8 +93,9 @@ const LoginPage = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="appearance-none relative block w-full px-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="appearance-none relative block w-full pl-12 pr-4 py-3 border border-gray-700 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 placeholder="Password"
+                disabled={isLoading}
               />
             </div>
           </div>
@@ -90,10 +103,20 @@ const LoginPage = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            disabled={isLoading}
+            disabled={isLoading || !email.trim() || !password.trim()}
             className="group relative w-full flex justify-center py-3 px-4 border border-transparent rounded-lg text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
           >
-            {isLoading ? "Signing in..." : "Sign in"}
+            {isLoading ? (
+              <span className="flex items-center">
+                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Signing in...
+              </span>
+            ) : (
+              "Sign in"
+            )}
           </button>
         </form>
       </div>
