@@ -29,7 +29,9 @@ const LoginPage = () => {
       
       // ✅ Axios automatically throws for 4xx/5xx, so if we reach here, it's successful
       console.log("Login successful:", res.data.message);
-      
+      localStorage.setItem("token", res.data.token);
+      api.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
+
       // ✅ Fetch the user profile AFTER login
       await fetchUser();
       navigate("/");
