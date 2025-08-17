@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     };
     
     checkAuth();
-  }, [auth]);
+  }, []);
 
   return (
     <AuthContext.Provider value={auth}>
