@@ -14,7 +14,7 @@ const PORT = 4100
 // const jwtsecret = process.env.JWT_SECRET
 
 const corsOptions = {
-    origin: "http://localhost:5173", // replace with your frontend URL
+    origin: process.env.FRONTEND_URL || "http://localhost:5173", // replace with your frontend URL
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization']

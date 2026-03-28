@@ -13,12 +13,10 @@ export const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   console.log("ProtectedRoute - Auth state:", { isAuthenticated, loading, user: !!user });
 
   if (loading) {
-    console.log("ProtectedRoute: Loading...");
     return <Loader />;
   }
 
   if (!isAuthenticated) {
-    console.log("ProtectedRoute: Not authenticated, redirecting to login");
     return <Navigate to="/login" replace />;
   }
 
