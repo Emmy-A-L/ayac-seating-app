@@ -93,4 +93,50 @@ router.post("/logout", (req, res) => {
   res.json({ message: "Logged out successfully" });
 });
 
+router.post("/register", async (req, res) => {
+  try {
+    const { fullName, email, password } = req.body;
+
+    // Input validation
+    if (!fullName || !email || !password) {
+      return res
+        .status(400)
+        .json({ message: "Full name, email and password are required" });
+    }
+
+    const user = await User.findOne({ email: email });
+    if (user) {
+      return res.status(401).json({ message: "User already exists" });
+    }
+
+    // Sign JWT - Use environment variable
+    const token = jwt.sign(
+      { id: user._id, email: user.email },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" }
+    );
+
+    // Send as cookie
+    res.cookie("token", token, {
+      httpOnly: true,
+      secure: true, // MUST be true for HTTPS (both domains are HTTPS)
+      sameSite: "none", // CRITICAL for cross-origin cookies
+      maxAge: 3600000, // 1 hour
+      path: "/", // Explicit path
+    });
+
+    res.json({
+      message: "Registration successful",
+      data: {
+        id: user._id,
+        fullName: user.fullName,
+        email: user.email,
+      },
+    });
+  } catch (error) {
+    console.error("Registration error:", error);
+    res.status(500).json({ message: "Server error" });
+  }
+})
+
 export default router;

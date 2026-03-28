@@ -2,9 +2,10 @@ import { YouthData } from "../models/youthModel.js";
 
 export const createYouthInfo = async (req, res) => {
   try {
+  
     let youthData = req.body;
     console.log(youthData);
-    const existingYouth = await YouthData.findOne({ fullName: youthData.fullName });
+    const existingYouth = await YouthData.findOne({ email: youthData.email });
     if (existingYouth) {
       return res.status(400).json({ message: "Youth data already exists" });
     }

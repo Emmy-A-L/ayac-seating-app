@@ -20,8 +20,14 @@ const VerificationForm = () => {
       );
 
       if (res.status === 200 && res.data.data[0]) {
-        setYouthInfo(res.data.data[0]);
-        console.log("response: ", res.data.data);
+        
+        for (const char of youthInfo?.fullName ?? "") {
+          if (youthInfo?.fullName.includes(char)) {
+            setYouthInfo(res.data.data[0]);
+            return youthInfo
+          }
+          // char = each character of the name
+        }
       } else {
         setError(
           "Couldn't find the name entered. Confirm name arrangement and try again!"

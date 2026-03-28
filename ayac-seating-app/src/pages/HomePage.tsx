@@ -24,7 +24,7 @@ const HomePage = () => {
 
       <img src="/BTL1-removebg-preview.png" alt="AYAC 2025 Logo" className="absolute w-120 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-15" />
 
-      <div className="relative w-full flex flex-col bg-gray-800/10 p-3 border-gray-600 backdrop-filter backdrop-blur-sm border border-gray-600 rounded-3xl rounded-bl-none z-10 mb-8">
+      <div className="relative w-full flex flex-col bg-gray-800/10 p-3 backdrop-filter backdrop-blur-sm border border-gray-600 rounded-3xl rounded-bl-none z-10 mb-8">
         <span className="absolute top-4 right-4">
           <button onClick={toggleHelp} className="text-gray-400 text-xl hover:text-white">
             <MdOutlineHelpOutline />

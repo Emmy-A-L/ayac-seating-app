@@ -5,6 +5,16 @@ const youthDataSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    phone: {
+        type: Number,
+        required: true,
+        unique: true,
+    },
     register: {
         type: Boolean,
         required: true,
@@ -13,6 +23,11 @@ const youthDataSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    sponsorshipStatus: {
+        type: String,
+        required: true,
+        enum: ["Fully Sponsored", "Not Sponsored", "Transport only", "Feeding Only"]
+    }
 });
 
 //create a user model using the userschema

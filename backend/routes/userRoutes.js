@@ -3,18 +3,18 @@ import { createUser, getAllUsers, getUserById, updateUser } from "../controllers
 
 const router = express.Router();
 
-// get all users
+// get all EXCOS
 router.get("/getAllUsers", getAllUsers);
 
-// get users by id
+// get EXCOS by id
 router.get("/getuser/:id", getUserById);
 
-// create user
+// create NEW EXCO
 router.post("/createUser", createUser);
-// update user
+// update EXCO
 router.patch("/:id", updateUser);
 
-// delete user
+// delete EXCO
 router.delete("/:id", (req, res) => {
   res.send("user deleted by ID: ");
 });

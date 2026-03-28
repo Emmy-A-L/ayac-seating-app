@@ -1,0 +1,985 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\My_PC\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install'
+1 verbose cli ]
+2 info using npm@2.15.12
+3 info using node@v22.19.0
+4 verbose readDependencies loading dependencies from C:\Users\My_PC\Desktop\ayac-seating-app\backend\package.json
+5 warn package.json express-mongoose@1.0.0 No description
+6 warn package.json express-mongoose@1.0.0 No repository field.
+7 warn package.json express-mongoose@1.0.0 No README data
+8 verbose install where, deps [
+8 verbose install   'C:\\Users\\My_PC\\Desktop\\ayac-seating-app\\backend',
+8 verbose install   [
+8 verbose install     'bcrypt',
+8 verbose install     'cookie-parser',
+8 verbose install     'cors',
+8 verbose install     'dotenv',
+8 verbose install     'express',
+8 verbose install     'jsonwebtoken',
+8 verbose install     'mongoose'
+8 verbose install   ]
+8 verbose install ]
+9 verbose install where, peers [ 'C:\\Users\\My_PC\\Desktop\\ayac-seating-app\\backend', [] ]
+10 verbose installManyTop reading for lifecycle C:\Users\My_PC\Desktop\ayac-seating-app\backend\package.json
+11 info preinstall express-mongoose@1.0.0
+12 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\accepts\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bcrypt\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\body-parser\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bson\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\buffer-equal-constant-time\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bytes\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bind-apply-helpers\package.json
+19 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bound\package.json
+20 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-disposition\package.json
+21 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-type\package.json
+22 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie\package.json
+23 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie-parser\package.json
+24 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie-signature\package.json
+25 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cors\package.json
+26 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\debug\package.json
+27 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\depd\package.json
+28 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\dotenv\package.json
+29 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\dunder-proto\package.json
+30 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ecdsa-sig-formatter\package.json
+31 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ee-first\package.json
+32 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\encodeurl\package.json
+33 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-define-property\package.json
+34 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-errors\package.json
+35 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-object-atoms\package.json
+36 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\escape-html\package.json
+37 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\etag\package.json
+38 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\express\package.json
+39 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\finalhandler\package.json
+40 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\forwarded\package.json
+41 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\fresh\package.json
+42 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\function-bind\package.json
+43 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-intrinsic\package.json
+44 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-proto\package.json
+45 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\gopd\package.json
+46 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\has-symbols\package.json
+47 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\hasown\package.json
+48 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\http-errors\package.json
+49 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\iconv-lite\package.json
+50 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\inherits\package.json
+51 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ipaddr.js\package.json
+52 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\is-promise\package.json
+53 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jsonwebtoken\package.json
+54 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jwa\package.json
+55 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jws\package.json
+56 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\kareem\package.json
+57 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.includes\package.json
+58 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isboolean\package.json
+59 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isinteger\package.json
+60 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isnumber\package.json
+61 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isplainobject\package.json
+62 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isstring\package.json
+63 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.once\package.json
+64 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\math-intrinsics\package.json
+65 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\media-typer\package.json
+66 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\memory-pager\package.json
+67 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\merge-descriptors\package.json
+68 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-db\package.json
+69 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-types\package.json
+70 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb\package.json
+71 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb-connection-string-url\package.json
+72 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongoose\package.json
+73 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mpath\package.json
+74 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mquery\package.json
+75 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ms\package.json
+76 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\negotiator\package.json
+77 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\node-addon-api\package.json
+78 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\node-gyp-build\package.json
+79 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\object-assign\package.json
+80 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\object-inspect\package.json
+81 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\on-finished\package.json
+82 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\once\package.json
+83 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\parseurl\package.json
+84 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\path-to-regexp\package.json
+85 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\proxy-addr\package.json
+86 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\punycode\package.json
+87 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\qs\package.json
+88 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\range-parser\package.json
+89 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\raw-body\package.json
+90 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\router\package.json
+91 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\safe-buffer\package.json
+92 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\safer-buffer\package.json
+93 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\semver\package.json
+94 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\send\package.json
+95 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\serve-static\package.json
+96 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\setprototypeof\package.json
+97 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel\package.json
+98 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel-list\package.json
+99 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel-map\package.json
+100 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel-weakmap\package.json
+101 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\sift\package.json
+102 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\sparse-bitfield\package.json
+103 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\statuses\package.json
+104 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\toidentifier\package.json
+105 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\tr46\package.json
+106 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\type-is\package.json
+107 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\unpipe\package.json
+108 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\vary\package.json
+109 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\webidl-conversions\package.json
+110 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\whatwg-url\package.json
+111 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\wrappy\package.json
+112 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\@mongodb-js\saslprep\package.json
+113 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\@types\webidl-conversions\package.json
+114 verbose installManyTop reading scoped package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\@types\whatwg-url\package.json
+115 info package.json punycode@2.3.1 punycode is also the name of a node core module.
+116 verbose readDependencies loading dependencies from C:\Users\My_PC\Desktop\ayac-seating-app\backend\package.json
+117 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\accepts\package.json
+118 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bcrypt\package.json
+119 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\body-parser\package.json
+120 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bson\package.json
+121 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\buffer-equal-constant-time\package.json
+122 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bytes\package.json
+123 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bind-apply-helpers\package.json
+124 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bound\package.json
+125 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-disposition\package.json
+126 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-type\package.json
+127 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie\package.json
+128 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie-parser\package.json
+129 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie-signature\package.json
+130 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cors\package.json
+131 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\debug\package.json
+132 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\depd\package.json
+133 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\dotenv\package.json
+134 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\dunder-proto\package.json
+135 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ecdsa-sig-formatter\package.json
+136 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ee-first\package.json
+137 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\encodeurl\package.json
+138 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-define-property\package.json
+139 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-errors\package.json
+140 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-object-atoms\package.json
+141 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\escape-html\package.json
+142 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\etag\package.json
+143 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\express\package.json
+144 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\finalhandler\package.json
+145 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\forwarded\package.json
+146 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\fresh\package.json
+147 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\function-bind\package.json
+148 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-intrinsic\package.json
+149 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-proto\package.json
+150 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\gopd\package.json
+151 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\has-symbols\package.json
+152 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\hasown\package.json
+153 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\http-errors\package.json
+154 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\iconv-lite\package.json
+155 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\inherits\package.json
+156 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ipaddr.js\package.json
+157 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\is-promise\package.json
+158 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jsonwebtoken\package.json
+159 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jwa\package.json
+160 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jws\package.json
+161 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\kareem\package.json
+162 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.includes\package.json
+163 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isboolean\package.json
+164 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isinteger\package.json
+165 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isnumber\package.json
+166 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isplainobject\package.json
+167 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isstring\package.json
+168 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.once\package.json
+169 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\math-intrinsics\package.json
+170 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\media-typer\package.json
+171 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\memory-pager\package.json
+172 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\merge-descriptors\package.json
+173 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-db\package.json
+174 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-types\package.json
+175 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb\package.json
+176 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb-connection-string-url\package.json
+177 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongoose\package.json
+178 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mpath\package.json
+179 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mquery\package.json
+180 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ms\package.json
+181 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\negotiator\package.json
+182 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\node-addon-api\package.json
+183 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\node-gyp-build\package.json
+184 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\object-assign\package.json
+185 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\object-inspect\package.json
+186 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\on-finished\package.json
+187 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\once\package.json
+188 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\parseurl\package.json
+189 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\path-to-regexp\package.json
+190 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\proxy-addr\package.json
+191 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\punycode\package.json
+192 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\qs\package.json
+193 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\range-parser\package.json
+194 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\raw-body\package.json
+195 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\router\package.json
+196 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\safe-buffer\package.json
+197 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\safer-buffer\package.json
+198 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\semver\package.json
+199 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\send\package.json
+200 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\serve-static\package.json
+201 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\setprototypeof\package.json
+202 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel\package.json
+203 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel-list\package.json
+204 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel-map\package.json
+205 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\side-channel-weakmap\package.json
+206 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\sift\package.json
+207 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\sparse-bitfield\package.json
+208 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\statuses\package.json
+209 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\toidentifier\package.json
+210 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\tr46\package.json
+211 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\type-is\package.json
+212 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\unpipe\package.json
+213 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\vary\package.json
+214 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\webidl-conversions\package.json
+215 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\whatwg-url\package.json
+216 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\wrappy\package.json
+217 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build\package.json
+218 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build-optional\package.json
+219 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build-optional.cmd\package.json
+220 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build-optional.ps1\package.json
+221 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build-test\package.json
+222 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build-test.cmd\package.json
+223 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build-test.ps1\package.json
+224 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build.cmd\package.json
+225 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\node-gyp-build.ps1\package.json
+226 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\semver\package.json
+227 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\semver.cmd\package.json
+228 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\.bin\semver.ps1\package.json
+229 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\@mongodb-js\saslprep\package.json
+230 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\@types\webidl-conversions\package.json
+231 verbose targetResolver reading package data from C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\@types\whatwg-url\package.json
+232 verbose already installed skipping bcrypt@^6.0.0 C:\Users\My_PC\Desktop\ayac-seating-app\backend
+233 verbose already installed skipping cookie-parser@^1.4.7 C:\Users\My_PC\Desktop\ayac-seating-app\backend
+234 verbose already installed skipping cors@^2.8.5 C:\Users\My_PC\Desktop\ayac-seating-app\backend
+235 verbose already installed skipping dotenv@^16.5.0 C:\Users\My_PC\Desktop\ayac-seating-app\backend
+236 verbose already installed skipping express@^5.1.0 C:\Users\My_PC\Desktop\ayac-seating-app\backend
+237 verbose already installed skipping jsonwebtoken@^9.0.2 C:\Users\My_PC\Desktop\ayac-seating-app\backend
+238 verbose already installed skipping mongoose@^8.15.1 C:\Users\My_PC\Desktop\ayac-seating-app\backend
+239 silly install resolved []
+240 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend
+241 info linkStuff express-mongoose@1.0.0
+242 silly linkStuff express-mongoose@1.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app as its parent node_modules
+243 verbose linkBins express-mongoose@1.0.0
+244 verbose linkMans express-mongoose@1.0.0
+245 verbose rebuildBundles express-mongoose@1.0.0
+246 verbose rebuildBundles [
+246 verbose rebuildBundles   '.bin',
+246 verbose rebuildBundles   '.package-lock.json',
+246 verbose rebuildBundles   '@mongodb-js',
+246 verbose rebuildBundles   '@types',
+246 verbose rebuildBundles   'accepts',
+246 verbose rebuildBundles   'bcrypt',
+246 verbose rebuildBundles   'body-parser',
+246 verbose rebuildBundles   'bson',
+246 verbose rebuildBundles   'buffer-equal-constant-time',
+246 verbose rebuildBundles   'bytes',
+246 verbose rebuildBundles   'call-bind-apply-helpers',
+246 verbose rebuildBundles   'call-bound',
+246 verbose rebuildBundles   'content-disposition',
+246 verbose rebuildBundles   'content-type',
+246 verbose rebuildBundles   'cookie',
+246 verbose rebuildBundles   'cookie-parser',
+246 verbose rebuildBundles   'cookie-signature',
+246 verbose rebuildBundles   'cors',
+246 verbose rebuildBundles   'debug',
+246 verbose rebuildBundles   'depd',
+246 verbose rebuildBundles   'dotenv',
+246 verbose rebuildBundles   'dunder-proto',
+246 verbose rebuildBundles   'ecdsa-sig-formatter',
+246 verbose rebuildBundles   'ee-first',
+246 verbose rebuildBundles   'encodeurl',
+246 verbose rebuildBundles   'es-define-property',
+246 verbose rebuildBundles   'es-errors',
+246 verbose rebuildBundles   'es-object-atoms',
+246 verbose rebuildBundles   'escape-html',
+246 verbose rebuildBundles   'etag',
+246 verbose rebuildBundles   'express',
+246 verbose rebuildBundles   'finalhandler',
+246 verbose rebuildBundles   'forwarded',
+246 verbose rebuildBundles   'fresh',
+246 verbose rebuildBundles   'function-bind',
+246 verbose rebuildBundles   'get-intrinsic',
+246 verbose rebuildBundles   'get-proto',
+246 verbose rebuildBundles   'gopd',
+246 verbose rebuildBundles   'has-symbols',
+246 verbose rebuildBundles   'hasown',
+246 verbose rebuildBundles   'http-errors',
+246 verbose rebuildBundles   'iconv-lite',
+246 verbose rebuildBundles   'inherits',
+246 verbose rebuildBundles   'ipaddr.js',
+246 verbose rebuildBundles   'is-promise',
+246 verbose rebuildBundles   'jsonwebtoken',
+246 verbose rebuildBundles   'jwa',
+246 verbose rebuildBundles   'jws',
+246 verbose rebuildBundles   'kareem',
+246 verbose rebuildBundles   'lodash.includes',
+246 verbose rebuildBundles   'lodash.isboolean',
+246 verbose rebuildBundles   'lodash.isinteger',
+246 verbose rebuildBundles   'lodash.isnumber',
+246 verbose rebuildBundles   'lodash.isplainobject',
+246 verbose rebuildBundles   'lodash.isstring',
+246 verbose rebuildBundles   'lodash.once',
+246 verbose rebuildBundles   'math-intrinsics',
+246 verbose rebuildBundles   'media-typer',
+246 verbose rebuildBundles   'memory-pager',
+246 verbose rebuildBundles   'merge-descriptors',
+246 verbose rebuildBundles   'mime-db',
+246 verbose rebuildBundles   'mime-types',
+246 verbose rebuildBundles   'mongodb',
+246 verbose rebuildBundles   'mongodb-connection-string-url',
+246 verbose rebuildBundles   'mongoose',
+246 verbose rebuildBundles   'mpath',
+246 verbose rebuildBundles   'mquery',
+246 verbose rebuildBundles   'ms',
+246 verbose rebuildBundles   'negotiator',
+246 verbose rebuildBundles   'node-addon-api',
+246 verbose rebuildBundles   'node-gyp-build',
+246 verbose rebuildBundles   'object-assign',
+246 verbose rebuildBundles   'object-inspect',
+246 verbose rebuildBundles   'on-finished',
+246 verbose rebuildBundles   'once',
+246 verbose rebuildBundles   'parseurl',
+246 verbose rebuildBundles   'path-to-regexp',
+246 verbose rebuildBundles   'proxy-addr',
+246 verbose rebuildBundles   'punycode',
+246 verbose rebuildBundles   'qs',
+246 verbose rebuildBundles   'range-parser',
+246 verbose rebuildBundles   'raw-body',
+246 verbose rebuildBundles   'router',
+246 verbose rebuildBundles   'safe-buffer',
+246 verbose rebuildBundles   'safer-buffer',
+246 verbose rebuildBundles   'semver',
+246 verbose rebuildBundles   'send',
+246 verbose rebuildBundles   'serve-static',
+246 verbose rebuildBundles   'setprototypeof',
+246 verbose rebuildBundles   'side-channel',
+246 verbose rebuildBundles   'side-channel-list',
+246 verbose rebuildBundles   'side-channel-map',
+246 verbose rebuildBundles   'side-channel-weakmap',
+246 verbose rebuildBundles   'sift',
+246 verbose rebuildBundles   'sparse-bitfield',
+246 verbose rebuildBundles   'statuses',
+246 verbose rebuildBundles   'toidentifier',
+246 verbose rebuildBundles   'tr46',
+246 verbose rebuildBundles   'type-is',
+246 verbose rebuildBundles   'unpipe',
+246 verbose rebuildBundles   ... 4 more items
+246 verbose rebuildBundles ]
+247 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\accepts
+248 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\accepts
+249 info preinstall accepts@2.0.0
+250 info linkStuff accepts@2.0.0
+251 silly linkStuff accepts@2.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+252 verbose linkBins accepts@2.0.0
+253 verbose linkMans accepts@2.0.0
+254 verbose rebuildBundles accepts@2.0.0
+255 info install accepts@2.0.0
+256 info postinstall accepts@2.0.0
+257 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\body-parser
+258 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\body-parser
+259 info preinstall body-parser@2.2.0
+260 info linkStuff body-parser@2.2.0
+261 silly linkStuff body-parser@2.2.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+262 verbose linkBins body-parser@2.2.0
+263 verbose linkMans body-parser@2.2.0
+264 verbose rebuildBundles body-parser@2.2.0
+265 info install body-parser@2.2.0
+266 info postinstall body-parser@2.2.0
+267 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bson
+268 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bson
+269 info preinstall bson@6.10.4
+270 info linkStuff bson@6.10.4
+271 silly linkStuff bson@6.10.4 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+272 verbose linkBins bson@6.10.4
+273 verbose linkMans bson@6.10.4
+274 verbose rebuildBundles bson@6.10.4
+275 info install bson@6.10.4
+276 info postinstall bson@6.10.4
+277 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\buffer-equal-constant-time
+278 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\buffer-equal-constant-time
+279 info preinstall buffer-equal-constant-time@1.0.1
+280 info linkStuff buffer-equal-constant-time@1.0.1
+281 silly linkStuff buffer-equal-constant-time@1.0.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+282 verbose linkBins buffer-equal-constant-time@1.0.1
+283 verbose linkMans buffer-equal-constant-time@1.0.1
+284 verbose rebuildBundles buffer-equal-constant-time@1.0.1
+285 info install buffer-equal-constant-time@1.0.1
+286 info postinstall buffer-equal-constant-time@1.0.1
+287 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bytes
+288 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\bytes
+289 info preinstall bytes@3.1.2
+290 info linkStuff bytes@3.1.2
+291 silly linkStuff bytes@3.1.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+292 verbose linkBins bytes@3.1.2
+293 verbose linkMans bytes@3.1.2
+294 verbose rebuildBundles bytes@3.1.2
+295 info install bytes@3.1.2
+296 info postinstall bytes@3.1.2
+297 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bind-apply-helpers
+298 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bind-apply-helpers
+299 info preinstall call-bind-apply-helpers@1.0.2
+300 info linkStuff call-bind-apply-helpers@1.0.2
+301 silly linkStuff call-bind-apply-helpers@1.0.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+302 verbose linkBins call-bind-apply-helpers@1.0.2
+303 verbose linkMans call-bind-apply-helpers@1.0.2
+304 verbose rebuildBundles call-bind-apply-helpers@1.0.2
+305 info install call-bind-apply-helpers@1.0.2
+306 info postinstall call-bind-apply-helpers@1.0.2
+307 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bound
+308 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\call-bound
+309 info preinstall call-bound@1.0.4
+310 info linkStuff call-bound@1.0.4
+311 silly linkStuff call-bound@1.0.4 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+312 verbose linkBins call-bound@1.0.4
+313 verbose linkMans call-bound@1.0.4
+314 verbose rebuildBundles call-bound@1.0.4
+315 info install call-bound@1.0.4
+316 info postinstall call-bound@1.0.4
+317 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-disposition
+318 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-disposition
+319 info preinstall content-disposition@1.0.0
+320 info linkStuff content-disposition@1.0.0
+321 silly linkStuff content-disposition@1.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+322 verbose linkBins content-disposition@1.0.0
+323 verbose linkMans content-disposition@1.0.0
+324 verbose rebuildBundles content-disposition@1.0.0
+325 info install content-disposition@1.0.0
+326 info postinstall content-disposition@1.0.0
+327 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-type
+328 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\content-type
+329 info preinstall content-type@1.0.5
+330 info linkStuff content-type@1.0.5
+331 silly linkStuff content-type@1.0.5 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+332 verbose linkBins content-type@1.0.5
+333 verbose linkMans content-type@1.0.5
+334 verbose rebuildBundles content-type@1.0.5
+335 info install content-type@1.0.5
+336 info postinstall content-type@1.0.5
+337 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie
+338 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie
+339 info preinstall cookie@0.7.2
+340 info linkStuff cookie@0.7.2
+341 silly linkStuff cookie@0.7.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+342 verbose linkBins cookie@0.7.2
+343 verbose linkMans cookie@0.7.2
+344 verbose rebuildBundles cookie@0.7.2
+345 info install cookie@0.7.2
+346 info postinstall cookie@0.7.2
+347 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie-signature
+348 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\cookie-signature
+349 info preinstall cookie-signature@1.2.2
+350 info linkStuff cookie-signature@1.2.2
+351 silly linkStuff cookie-signature@1.2.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+352 verbose linkBins cookie-signature@1.2.2
+353 verbose linkMans cookie-signature@1.2.2
+354 verbose rebuildBundles cookie-signature@1.2.2
+355 info install cookie-signature@1.2.2
+356 info postinstall cookie-signature@1.2.2
+357 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\debug
+358 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\debug
+359 info preinstall debug@4.4.1
+360 info linkStuff debug@4.4.1
+361 silly linkStuff debug@4.4.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+362 verbose linkBins debug@4.4.1
+363 verbose linkMans debug@4.4.1
+364 verbose rebuildBundles debug@4.4.1
+365 info install debug@4.4.1
+366 info postinstall debug@4.4.1
+367 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\depd
+368 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\depd
+369 info preinstall depd@2.0.0
+370 info linkStuff depd@2.0.0
+371 silly linkStuff depd@2.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+372 verbose linkBins depd@2.0.0
+373 verbose linkMans depd@2.0.0
+374 verbose rebuildBundles depd@2.0.0
+375 info install depd@2.0.0
+376 info postinstall depd@2.0.0
+377 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\dunder-proto
+378 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\dunder-proto
+379 info preinstall dunder-proto@1.0.1
+380 info linkStuff dunder-proto@1.0.1
+381 silly linkStuff dunder-proto@1.0.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+382 verbose linkBins dunder-proto@1.0.1
+383 verbose linkMans dunder-proto@1.0.1
+384 verbose rebuildBundles dunder-proto@1.0.1
+385 info install dunder-proto@1.0.1
+386 info postinstall dunder-proto@1.0.1
+387 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ecdsa-sig-formatter
+388 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ecdsa-sig-formatter
+389 info preinstall ecdsa-sig-formatter@1.0.11
+390 info linkStuff ecdsa-sig-formatter@1.0.11
+391 silly linkStuff ecdsa-sig-formatter@1.0.11 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+392 verbose linkBins ecdsa-sig-formatter@1.0.11
+393 verbose linkMans ecdsa-sig-formatter@1.0.11
+394 verbose rebuildBundles ecdsa-sig-formatter@1.0.11
+395 info install ecdsa-sig-formatter@1.0.11
+396 info postinstall ecdsa-sig-formatter@1.0.11
+397 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ee-first
+398 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ee-first
+399 info preinstall ee-first@1.1.1
+400 info linkStuff ee-first@1.1.1
+401 silly linkStuff ee-first@1.1.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+402 verbose linkBins ee-first@1.1.1
+403 verbose linkMans ee-first@1.1.1
+404 verbose rebuildBundles ee-first@1.1.1
+405 info install ee-first@1.1.1
+406 info postinstall ee-first@1.1.1
+407 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\encodeurl
+408 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\encodeurl
+409 info preinstall encodeurl@2.0.0
+410 info linkStuff encodeurl@2.0.0
+411 silly linkStuff encodeurl@2.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+412 verbose linkBins encodeurl@2.0.0
+413 verbose linkMans encodeurl@2.0.0
+414 verbose rebuildBundles encodeurl@2.0.0
+415 info install encodeurl@2.0.0
+416 info postinstall encodeurl@2.0.0
+417 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-define-property
+418 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-define-property
+419 info preinstall es-define-property@1.0.1
+420 info linkStuff es-define-property@1.0.1
+421 silly linkStuff es-define-property@1.0.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+422 verbose linkBins es-define-property@1.0.1
+423 verbose linkMans es-define-property@1.0.1
+424 verbose rebuildBundles es-define-property@1.0.1
+425 info install es-define-property@1.0.1
+426 info postinstall es-define-property@1.0.1
+427 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-errors
+428 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-errors
+429 info preinstall es-errors@1.3.0
+430 info linkStuff es-errors@1.3.0
+431 silly linkStuff es-errors@1.3.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+432 verbose linkBins es-errors@1.3.0
+433 verbose linkMans es-errors@1.3.0
+434 verbose rebuildBundles es-errors@1.3.0
+435 info install es-errors@1.3.0
+436 info postinstall es-errors@1.3.0
+437 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-object-atoms
+438 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\es-object-atoms
+439 info preinstall es-object-atoms@1.1.1
+440 info linkStuff es-object-atoms@1.1.1
+441 silly linkStuff es-object-atoms@1.1.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+442 verbose linkBins es-object-atoms@1.1.1
+443 verbose linkMans es-object-atoms@1.1.1
+444 verbose rebuildBundles es-object-atoms@1.1.1
+445 info install es-object-atoms@1.1.1
+446 info postinstall es-object-atoms@1.1.1
+447 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\escape-html
+448 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\escape-html
+449 info preinstall escape-html@1.0.3
+450 info linkStuff escape-html@1.0.3
+451 silly linkStuff escape-html@1.0.3 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+452 verbose linkBins escape-html@1.0.3
+453 verbose linkMans escape-html@1.0.3
+454 verbose rebuildBundles escape-html@1.0.3
+455 info install escape-html@1.0.3
+456 info postinstall escape-html@1.0.3
+457 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\etag
+458 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\etag
+459 info preinstall etag@1.8.1
+460 info linkStuff etag@1.8.1
+461 silly linkStuff etag@1.8.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+462 verbose linkBins etag@1.8.1
+463 verbose linkMans etag@1.8.1
+464 verbose rebuildBundles etag@1.8.1
+465 info install etag@1.8.1
+466 info postinstall etag@1.8.1
+467 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\finalhandler
+468 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\finalhandler
+469 info preinstall finalhandler@2.1.0
+470 info linkStuff finalhandler@2.1.0
+471 silly linkStuff finalhandler@2.1.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+472 verbose linkBins finalhandler@2.1.0
+473 verbose linkMans finalhandler@2.1.0
+474 verbose rebuildBundles finalhandler@2.1.0
+475 info install finalhandler@2.1.0
+476 info postinstall finalhandler@2.1.0
+477 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\forwarded
+478 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\forwarded
+479 info preinstall forwarded@0.2.0
+480 info linkStuff forwarded@0.2.0
+481 silly linkStuff forwarded@0.2.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+482 verbose linkBins forwarded@0.2.0
+483 verbose linkMans forwarded@0.2.0
+484 verbose rebuildBundles forwarded@0.2.0
+485 info install forwarded@0.2.0
+486 info postinstall forwarded@0.2.0
+487 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\fresh
+488 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\fresh
+489 info preinstall fresh@2.0.0
+490 info linkStuff fresh@2.0.0
+491 silly linkStuff fresh@2.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+492 verbose linkBins fresh@2.0.0
+493 verbose linkMans fresh@2.0.0
+494 verbose rebuildBundles fresh@2.0.0
+495 info install fresh@2.0.0
+496 info postinstall fresh@2.0.0
+497 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\function-bind
+498 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\function-bind
+499 info preinstall function-bind@1.1.2
+500 info linkStuff function-bind@1.1.2
+501 silly linkStuff function-bind@1.1.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+502 verbose linkBins function-bind@1.1.2
+503 verbose linkMans function-bind@1.1.2
+504 verbose rebuildBundles function-bind@1.1.2
+505 info install function-bind@1.1.2
+506 info postinstall function-bind@1.1.2
+507 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-intrinsic
+508 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-intrinsic
+509 info preinstall get-intrinsic@1.3.0
+510 info linkStuff get-intrinsic@1.3.0
+511 silly linkStuff get-intrinsic@1.3.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+512 verbose linkBins get-intrinsic@1.3.0
+513 verbose linkMans get-intrinsic@1.3.0
+514 verbose rebuildBundles get-intrinsic@1.3.0
+515 info install get-intrinsic@1.3.0
+516 info postinstall get-intrinsic@1.3.0
+517 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-proto
+518 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\get-proto
+519 info preinstall get-proto@1.0.1
+520 info linkStuff get-proto@1.0.1
+521 silly linkStuff get-proto@1.0.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+522 verbose linkBins get-proto@1.0.1
+523 verbose linkMans get-proto@1.0.1
+524 verbose rebuildBundles get-proto@1.0.1
+525 info install get-proto@1.0.1
+526 info postinstall get-proto@1.0.1
+527 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\gopd
+528 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\gopd
+529 info preinstall gopd@1.2.0
+530 info linkStuff gopd@1.2.0
+531 silly linkStuff gopd@1.2.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+532 verbose linkBins gopd@1.2.0
+533 verbose linkMans gopd@1.2.0
+534 verbose rebuildBundles gopd@1.2.0
+535 info install gopd@1.2.0
+536 info postinstall gopd@1.2.0
+537 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\has-symbols
+538 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\has-symbols
+539 info preinstall has-symbols@1.1.0
+540 info linkStuff has-symbols@1.1.0
+541 silly linkStuff has-symbols@1.1.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+542 verbose linkBins has-symbols@1.1.0
+543 verbose linkMans has-symbols@1.1.0
+544 verbose rebuildBundles has-symbols@1.1.0
+545 info install has-symbols@1.1.0
+546 info postinstall has-symbols@1.1.0
+547 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\hasown
+548 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\hasown
+549 info preinstall hasown@2.0.2
+550 info linkStuff hasown@2.0.2
+551 silly linkStuff hasown@2.0.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+552 verbose linkBins hasown@2.0.2
+553 verbose linkMans hasown@2.0.2
+554 verbose rebuildBundles hasown@2.0.2
+555 info install hasown@2.0.2
+556 info postinstall hasown@2.0.2
+557 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\http-errors
+558 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\http-errors
+559 info preinstall http-errors@2.0.0
+560 info linkStuff http-errors@2.0.0
+561 silly linkStuff http-errors@2.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+562 verbose linkBins http-errors@2.0.0
+563 verbose linkMans http-errors@2.0.0
+564 verbose rebuildBundles http-errors@2.0.0
+565 verbose rebuildBundles [ 'statuses' ]
+566 info install http-errors@2.0.0
+567 info postinstall http-errors@2.0.0
+568 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\iconv-lite
+569 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\iconv-lite
+570 info preinstall iconv-lite@0.6.3
+571 info linkStuff iconv-lite@0.6.3
+572 silly linkStuff iconv-lite@0.6.3 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+573 verbose linkBins iconv-lite@0.6.3
+574 verbose linkMans iconv-lite@0.6.3
+575 verbose rebuildBundles iconv-lite@0.6.3
+576 info install iconv-lite@0.6.3
+577 info postinstall iconv-lite@0.6.3
+578 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\inherits
+579 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\inherits
+580 info preinstall inherits@2.0.4
+581 info linkStuff inherits@2.0.4
+582 silly linkStuff inherits@2.0.4 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+583 verbose linkBins inherits@2.0.4
+584 verbose linkMans inherits@2.0.4
+585 verbose rebuildBundles inherits@2.0.4
+586 info install inherits@2.0.4
+587 info postinstall inherits@2.0.4
+588 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ipaddr.js
+589 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ipaddr.js
+590 info preinstall ipaddr.js@1.9.1
+591 info linkStuff ipaddr.js@1.9.1
+592 silly linkStuff ipaddr.js@1.9.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+593 verbose linkBins ipaddr.js@1.9.1
+594 verbose linkMans ipaddr.js@1.9.1
+595 verbose rebuildBundles ipaddr.js@1.9.1
+596 info install ipaddr.js@1.9.1
+597 info postinstall ipaddr.js@1.9.1
+598 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\is-promise
+599 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\is-promise
+600 info preinstall is-promise@4.0.0
+601 info linkStuff is-promise@4.0.0
+602 silly linkStuff is-promise@4.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+603 verbose linkBins is-promise@4.0.0
+604 verbose linkMans is-promise@4.0.0
+605 verbose rebuildBundles is-promise@4.0.0
+606 info install is-promise@4.0.0
+607 info postinstall is-promise@4.0.0
+608 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jwa
+609 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jwa
+610 info preinstall jwa@1.4.2
+611 info linkStuff jwa@1.4.2
+612 silly linkStuff jwa@1.4.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+613 verbose linkBins jwa@1.4.2
+614 verbose linkMans jwa@1.4.2
+615 verbose rebuildBundles jwa@1.4.2
+616 info install jwa@1.4.2
+617 info postinstall jwa@1.4.2
+618 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jws
+619 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\jws
+620 info preinstall jws@3.2.2
+621 info linkStuff jws@3.2.2
+622 silly linkStuff jws@3.2.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+623 verbose linkBins jws@3.2.2
+624 verbose linkMans jws@3.2.2
+625 verbose rebuildBundles jws@3.2.2
+626 info install jws@3.2.2
+627 info postinstall jws@3.2.2
+628 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\kareem
+629 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\kareem
+630 info preinstall kareem@2.6.3
+631 info linkStuff kareem@2.6.3
+632 silly linkStuff kareem@2.6.3 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+633 verbose linkBins kareem@2.6.3
+634 verbose linkMans kareem@2.6.3
+635 verbose rebuildBundles kareem@2.6.3
+636 info install kareem@2.6.3
+637 info postinstall kareem@2.6.3
+638 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.includes
+639 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.includes
+640 info preinstall lodash.includes@4.3.0
+641 info linkStuff lodash.includes@4.3.0
+642 silly linkStuff lodash.includes@4.3.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+643 verbose linkBins lodash.includes@4.3.0
+644 verbose linkMans lodash.includes@4.3.0
+645 verbose rebuildBundles lodash.includes@4.3.0
+646 info install lodash.includes@4.3.0
+647 info postinstall lodash.includes@4.3.0
+648 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isboolean
+649 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isboolean
+650 info preinstall lodash.isboolean@3.0.3
+651 info linkStuff lodash.isboolean@3.0.3
+652 silly linkStuff lodash.isboolean@3.0.3 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+653 verbose linkBins lodash.isboolean@3.0.3
+654 verbose linkMans lodash.isboolean@3.0.3
+655 verbose rebuildBundles lodash.isboolean@3.0.3
+656 info install lodash.isboolean@3.0.3
+657 info postinstall lodash.isboolean@3.0.3
+658 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isinteger
+659 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isinteger
+660 info preinstall lodash.isinteger@4.0.4
+661 info linkStuff lodash.isinteger@4.0.4
+662 silly linkStuff lodash.isinteger@4.0.4 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+663 verbose linkBins lodash.isinteger@4.0.4
+664 verbose linkMans lodash.isinteger@4.0.4
+665 verbose rebuildBundles lodash.isinteger@4.0.4
+666 info install lodash.isinteger@4.0.4
+667 info postinstall lodash.isinteger@4.0.4
+668 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isnumber
+669 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isnumber
+670 info preinstall lodash.isnumber@3.0.3
+671 info linkStuff lodash.isnumber@3.0.3
+672 silly linkStuff lodash.isnumber@3.0.3 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+673 verbose linkBins lodash.isnumber@3.0.3
+674 verbose linkMans lodash.isnumber@3.0.3
+675 verbose rebuildBundles lodash.isnumber@3.0.3
+676 info install lodash.isnumber@3.0.3
+677 info postinstall lodash.isnumber@3.0.3
+678 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isplainobject
+679 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isplainobject
+680 info preinstall lodash.isplainobject@4.0.6
+681 info linkStuff lodash.isplainobject@4.0.6
+682 silly linkStuff lodash.isplainobject@4.0.6 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+683 verbose linkBins lodash.isplainobject@4.0.6
+684 verbose linkMans lodash.isplainobject@4.0.6
+685 verbose rebuildBundles lodash.isplainobject@4.0.6
+686 info install lodash.isplainobject@4.0.6
+687 info postinstall lodash.isplainobject@4.0.6
+688 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isstring
+689 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.isstring
+690 info preinstall lodash.isstring@4.0.1
+691 info linkStuff lodash.isstring@4.0.1
+692 silly linkStuff lodash.isstring@4.0.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+693 verbose linkBins lodash.isstring@4.0.1
+694 verbose linkMans lodash.isstring@4.0.1
+695 verbose rebuildBundles lodash.isstring@4.0.1
+696 info install lodash.isstring@4.0.1
+697 info postinstall lodash.isstring@4.0.1
+698 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.once
+699 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\lodash.once
+700 info preinstall lodash.once@4.1.1
+701 info linkStuff lodash.once@4.1.1
+702 silly linkStuff lodash.once@4.1.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+703 verbose linkBins lodash.once@4.1.1
+704 verbose linkMans lodash.once@4.1.1
+705 verbose rebuildBundles lodash.once@4.1.1
+706 info install lodash.once@4.1.1
+707 info postinstall lodash.once@4.1.1
+708 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\math-intrinsics
+709 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\math-intrinsics
+710 info preinstall math-intrinsics@1.1.0
+711 info linkStuff math-intrinsics@1.1.0
+712 silly linkStuff math-intrinsics@1.1.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+713 verbose linkBins math-intrinsics@1.1.0
+714 verbose linkMans math-intrinsics@1.1.0
+715 verbose rebuildBundles math-intrinsics@1.1.0
+716 info install math-intrinsics@1.1.0
+717 info postinstall math-intrinsics@1.1.0
+718 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\media-typer
+719 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\media-typer
+720 info preinstall media-typer@1.1.0
+721 info linkStuff media-typer@1.1.0
+722 silly linkStuff media-typer@1.1.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+723 verbose linkBins media-typer@1.1.0
+724 verbose linkMans media-typer@1.1.0
+725 verbose rebuildBundles media-typer@1.1.0
+726 info install media-typer@1.1.0
+727 info postinstall media-typer@1.1.0
+728 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\memory-pager
+729 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\memory-pager
+730 info preinstall memory-pager@1.5.0
+731 info linkStuff memory-pager@1.5.0
+732 silly linkStuff memory-pager@1.5.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+733 verbose linkBins memory-pager@1.5.0
+734 verbose linkMans memory-pager@1.5.0
+735 verbose rebuildBundles memory-pager@1.5.0
+736 info install memory-pager@1.5.0
+737 info postinstall memory-pager@1.5.0
+738 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\merge-descriptors
+739 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\merge-descriptors
+740 info preinstall merge-descriptors@2.0.0
+741 info linkStuff merge-descriptors@2.0.0
+742 silly linkStuff merge-descriptors@2.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+743 verbose linkBins merge-descriptors@2.0.0
+744 verbose linkMans merge-descriptors@2.0.0
+745 verbose rebuildBundles merge-descriptors@2.0.0
+746 info install merge-descriptors@2.0.0
+747 info postinstall merge-descriptors@2.0.0
+748 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-db
+749 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-db
+750 info preinstall mime-db@1.54.0
+751 info linkStuff mime-db@1.54.0
+752 silly linkStuff mime-db@1.54.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+753 verbose linkBins mime-db@1.54.0
+754 verbose linkMans mime-db@1.54.0
+755 verbose rebuildBundles mime-db@1.54.0
+756 info install mime-db@1.54.0
+757 info postinstall mime-db@1.54.0
+758 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-types
+759 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mime-types
+760 info preinstall mime-types@3.0.1
+761 info linkStuff mime-types@3.0.1
+762 silly linkStuff mime-types@3.0.1 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+763 verbose linkBins mime-types@3.0.1
+764 verbose linkMans mime-types@3.0.1
+765 verbose rebuildBundles mime-types@3.0.1
+766 info install mime-types@3.0.1
+767 info postinstall mime-types@3.0.1
+768 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb
+769 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb
+770 info preinstall mongodb@6.18.0
+771 info linkStuff mongodb@6.18.0
+772 silly linkStuff mongodb@6.18.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+773 verbose linkBins mongodb@6.18.0
+774 verbose linkMans mongodb@6.18.0
+775 verbose rebuildBundles mongodb@6.18.0
+776 info install mongodb@6.18.0
+777 info postinstall mongodb@6.18.0
+778 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb-connection-string-url
+779 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mongodb-connection-string-url
+780 info preinstall mongodb-connection-string-url@3.0.2
+781 info linkStuff mongodb-connection-string-url@3.0.2
+782 silly linkStuff mongodb-connection-string-url@3.0.2 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+783 verbose linkBins mongodb-connection-string-url@3.0.2
+784 verbose linkMans mongodb-connection-string-url@3.0.2
+785 verbose rebuildBundles mongodb-connection-string-url@3.0.2
+786 info install mongodb-connection-string-url@3.0.2
+787 info postinstall mongodb-connection-string-url@3.0.2
+788 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mpath
+789 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mpath
+790 info preinstall mpath@0.9.0
+791 info linkStuff mpath@0.9.0
+792 silly linkStuff mpath@0.9.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+793 verbose linkBins mpath@0.9.0
+794 verbose linkMans mpath@0.9.0
+795 verbose rebuildBundles mpath@0.9.0
+796 info install mpath@0.9.0
+797 info postinstall mpath@0.9.0
+798 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mquery
+799 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\mquery
+800 info preinstall mquery@5.0.0
+801 info linkStuff mquery@5.0.0
+802 silly linkStuff mquery@5.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+803 verbose linkBins mquery@5.0.0
+804 verbose linkMans mquery@5.0.0
+805 verbose rebuildBundles mquery@5.0.0
+806 info install mquery@5.0.0
+807 info postinstall mquery@5.0.0
+808 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ms
+809 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\ms
+810 info preinstall ms@2.1.3
+811 info linkStuff ms@2.1.3
+812 silly linkStuff ms@2.1.3 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+813 verbose linkBins ms@2.1.3
+814 verbose linkMans ms@2.1.3
+815 verbose rebuildBundles ms@2.1.3
+816 info install ms@2.1.3
+817 info postinstall ms@2.1.3
+818 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\negotiator
+819 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\negotiator
+820 info preinstall negotiator@1.0.0
+821 info linkStuff negotiator@1.0.0
+822 silly linkStuff negotiator@1.0.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+823 verbose linkBins negotiator@1.0.0
+824 verbose linkMans negotiator@1.0.0
+825 verbose rebuildBundles negotiator@1.0.0
+826 info install negotiator@1.0.0
+827 info postinstall negotiator@1.0.0
+828 verbose rebuild bundle C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\node-addon-api
+829 info build C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules\node-addon-api
+830 info preinstall node-addon-api@8.5.0
+831 info linkStuff node-addon-api@8.5.0
+832 silly linkStuff node-addon-api@8.5.0 has C:\Users\My_PC\Desktop\ayac-seating-app\backend\node_modules as its parent node_modules
+833 verbose linkBins node-addon-api@8.5.0
+834 verbose linkMans node-addon-api@8.5.0
+835 verbose rebuildBundles node-addon-api@8.5.0
+836 info install node-addon-api@8.5.0
+837 verbose unsafe-perm in lifecycle true
+838 info node-addon-api@8.5.0 Failed to exec install script
+839 verbose stack Error: node-addon-api@8.5.0 install: `node-gyp rebuild`
+839 verbose stack Exit status 1
+839 verbose stack     at EventEmitter.<anonymous> (C:\Users\My_PC\node_modules\npm\lib\utils\lifecycle.js:217:16)
+839 verbose stack     at EventEmitter.emit (node:events:519:28)
+839 verbose stack     at ChildProcess.<anonymous> (C:\Users\My_PC\node_modules\npm\lib\utils\spawn.js:24:14)
+839 verbose stack     at ChildProcess.emit (node:events:519:28)
+839 verbose stack     at maybeClose (node:internal/child_process:1101:16)
+839 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+840 verbose pkgid node-addon-api@8.5.0
+841 verbose cwd C:\Users\My_PC\Desktop\ayac-seating-app\backend
+842 error Windows_NT 10.0.19045
+843 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\My_PC\\node_modules\\npm\\bin\\npm-cli.js" "install"
+844 error node v22.19.0
+845 error npm  v2.15.12
+846 error code ELIFECYCLE
+847 error node-addon-api@8.5.0 install: `node-gyp rebuild`
+847 error Exit status 1
+848 error Failed at the node-addon-api@8.5.0 install script 'node-gyp rebuild'.
+848 error This is most likely a problem with the node-addon-api package,
+848 error not with npm itself.
+848 error Tell the author that this fails on your system:
+848 error     node-gyp rebuild
+848 error You can get information on how to open an issue for this project with:
+848 error     npm bugs node-addon-api
+848 error Or if that isn't available, you can get their info via:
+848 error
+848 error     npm owner ls node-addon-api
+848 error There is likely additional logging output above.
+849 verbose exit [ 1, true ]
